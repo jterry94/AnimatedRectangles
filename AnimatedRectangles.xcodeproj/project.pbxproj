@@ -14,6 +14,15 @@
 		A51FCD0529E8684B0018D0A0 /* AnimatedRectanglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD0429E8684B0018D0A0 /* AnimatedRectanglesTests.swift */; };
 		A51FCD0F29E8684B0018D0A0 /* AnimatedRectanglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD0E29E8684B0018D0A0 /* AnimatedRectanglesUITests.swift */; };
 		A51FCD1129E8684B0018D0A0 /* AnimatedRectanglesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD1029E8684B0018D0A0 /* AnimatedRectanglesUITestsLaunchTests.swift */; };
+		A51FCD5929FF3FF00018D0A0 /* Spins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD5829FF3FF00018D0A0 /* Spins.swift */; };
+		A51FCD5A29FF3FF00018D0A0 /* Spins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD5829FF3FF00018D0A0 /* Spins.swift */; };
+		A51FCD5B29FF3FF00018D0A0 /* Spins.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD5829FF3FF00018D0A0 /* Spins.swift */; };
+		A51FCD5D29FF40470018D0A0 /* Spin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD5C29FF40470018D0A0 /* Spin.swift */; };
+		A51FCD5E29FF40470018D0A0 /* Spin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD5C29FF40470018D0A0 /* Spin.swift */; };
+		A51FCD5F29FF40470018D0A0 /* Spin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD5C29FF40470018D0A0 /* Spin.swift */; };
+		A51FCD6129FF40A60018D0A0 /* TwoDMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD6029FF40A60018D0A0 /* TwoDMagnet.swift */; };
+		A51FCD6229FF40A60018D0A0 /* TwoDMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD6029FF40A60018D0A0 /* TwoDMagnet.swift */; };
+		A51FCD6329FF40A60018D0A0 /* TwoDMagnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51FCD6029FF40A60018D0A0 /* TwoDMagnet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,9 @@
 		A51FCD0A29E8684B0018D0A0 /* AnimatedRectanglesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedRectanglesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51FCD0E29E8684B0018D0A0 /* AnimatedRectanglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRectanglesUITests.swift; sourceTree = "<group>"; };
 		A51FCD1029E8684B0018D0A0 /* AnimatedRectanglesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRectanglesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A51FCD5829FF3FF00018D0A0 /* Spins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spins.swift; sourceTree = "<group>"; };
+		A51FCD5C29FF40470018D0A0 /* Spin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spin.swift; sourceTree = "<group>"; };
+		A51FCD6029FF40A60018D0A0 /* TwoDMagnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDMagnet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,9 @@
 			children = (
 				A51FCCF229E8684A0018D0A0 /* AnimatedRectanglesApp.swift */,
 				A51FCCF429E8684A0018D0A0 /* ContentView.swift */,
+				A51FCD6029FF40A60018D0A0 /* TwoDMagnet.swift */,
+				A51FCD5C29FF40470018D0A0 /* Spin.swift */,
+				A51FCD5829FF3FF00018D0A0 /* Spins.swift */,
 				A51FCCF629E8684B0018D0A0 /* Assets.xcassets */,
 				A51FCCF829E8684B0018D0A0 /* AnimatedRectangles.entitlements */,
 				A51FCCF929E8684B0018D0A0 /* Preview Content */,
@@ -259,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51FCD6129FF40A60018D0A0 /* TwoDMagnet.swift in Sources */,
+				A51FCD5929FF3FF00018D0A0 /* Spins.swift in Sources */,
 				A51FCCF529E8684A0018D0A0 /* ContentView.swift in Sources */,
 				A51FCCF329E8684A0018D0A0 /* AnimatedRectanglesApp.swift in Sources */,
+				A51FCD5D29FF40470018D0A0 /* Spin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51FCD0529E8684B0018D0A0 /* AnimatedRectanglesTests.swift in Sources */,
+				A51FCD6229FF40A60018D0A0 /* TwoDMagnet.swift in Sources */,
+				A51FCD5A29FF3FF00018D0A0 /* Spins.swift in Sources */,
+				A51FCD5E29FF40470018D0A0 /* Spin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51FCD6329FF40A60018D0A0 /* TwoDMagnet.swift in Sources */,
+				A51FCD5B29FF3FF00018D0A0 /* Spins.swift in Sources */,
 				A51FCD0F29E8684B0018D0A0 /* AnimatedRectanglesUITests.swift in Sources */,
 				A51FCD1129E8684B0018D0A0 /* AnimatedRectanglesUITestsLaunchTests.swift in Sources */,
+				A51FCD5F29FF40470018D0A0 /* Spin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

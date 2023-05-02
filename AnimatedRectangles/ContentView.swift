@@ -19,7 +19,7 @@ struct ContentView: View {
                 Canvas { context, size in
                     twoDMagnet.update(to: timeline.date)
                     
-                    for spin in twoDMagnet.spins {
+                    for spin in twoDMagnet.spinConfiguration.spinConfiguration {
                         let rect = CGRect(x: spin.x * (size.width/CGFloat(spinWidth)), y: spin.y * (size.height/CGFloat(spinWidth)), width: (size.height/CGFloat(spinWidth)), height: (size.height/CGFloat(spinWidth)))
                         let shape = Rectangle().path(in: rect)
                         if (spin.spin){
@@ -37,6 +37,8 @@ struct ContentView: View {
             .padding()
             
             Button("Start", action: setupSpins)
+            
+            Button("SpinMe", action: changeSpins)
         }
     }
     
@@ -45,38 +47,40 @@ struct ContentView: View {
         twoDMagnet.setup(number: Int(spinWidth))
         
     }
-}
-
-struct Spin: Hashable, Equatable {
-    var x: Double
-    var y: Double
-    var spin: Bool
-}
-
-class TwoDMagnet: ObservableObject {
-    //var spins = Set<Spin>()
-    var spins :[Spin] = []
     
-    func setup(number: Int){
-        
-        for y in 0..<(number){
+    func spinChangeMethod(thing: inout [Spin]) {
+        for i in 0..<twoDMagnet.spinConfiguration.spinConfiguration.count {
             
-            for x in 0..<number{
+            thing[i].spin = Bool.random()
+        }
+    }
+    
+    func changeSpins(){
+        
+        Task{
+            
+            for _ in 0...10000{
+                await withTaskGroup(of: Void.self) { group in
+                    
+                    //Make a copy to avoid working on the struct/
+                    var thing = self.twoDMagnet.spinConfiguration.spinConfiguration
+                    
+                    
+                    
+                    spinChangeMethod(thing: &thing)
+                    
+                    self.twoDMagnet.spinConfiguration.spinConfiguration = thing
+                    
+                    
+                }
                 
-                spins.append(Spin(x: Double(x), y: Double(y), spin: true))
                 
             }
             
         }
     }
-
-    func update(to date: Date) {
-        for i in 0..<spins.count {
-            
-            spins[i].spin = Bool.random()
-        }
-    }
 }
+
 
 
 struct ContentView_Previews: PreviewProvider {
