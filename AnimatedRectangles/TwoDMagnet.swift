@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Observation
 
-class TwoDMagnet: ObservableObject {
+@Observable class TwoDMagnet: ObservableObject {
     
-    @ObservedObject var spinConfiguration = Spins()
+    var spinConfiguration = Spins()
     
     func setup(number: Int){
         

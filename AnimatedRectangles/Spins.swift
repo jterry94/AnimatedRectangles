@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Observation
 
-class Spins: ObservableObject {
+@Observable class Spins: ObservableObject {
     
-    @Published var spinConfiguration: [Spin] = []
+    var spinConfiguration: [Spin] = []
     
 }

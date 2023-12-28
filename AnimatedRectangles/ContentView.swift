@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Observation  
 
 struct ContentView: View {
-    @StateObject private var twoDMagnet = TwoDMagnet()
+    @State private var twoDMagnet = TwoDMagnet()
     let upColor = Color(red: 0.25, green: 0.5, blue: 0.75)
     let downColor = Color(red: 0.75, green: 0.5, blue: 0.25)
     let spinWidth = 25.0
