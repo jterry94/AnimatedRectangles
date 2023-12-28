@@ -8,7 +8,7 @@
 import SwiftUI
 import Observation
 
-@Observable class TwoDMagnet: ObservableObject {
+@Observable class TwoDMagnet {
     
     var spinConfiguration = Spins()
     

@@ -8,7 +8,7 @@
 import Foundation
 import Observation
 
-@Observable class Spins: ObservableObject {
+@Observable class Spins {
     
     var spinConfiguration: [Spin] = []
     
